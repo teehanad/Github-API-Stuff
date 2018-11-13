@@ -1,17 +1,18 @@
 from github import Github
 
-# First create a Github instance:
-
+# create a Github instance:
 # using username and password
 username = input("Enter a username inside quoteation marks: ")
 password = input("Enter your password inside quotation marks: ")
 g = Github(username, password)
 
-# Then play with your Github objects:
 for repo in g.get_user().get_repos():
-    print(repo.name)
-    print(repo.stargazers_count)
-    print(repo.language)
+    # Prints names of users repos
+    print("Name of repo: " + repo.name)
+    # Prints the number of stars that repo has
+    print("Number of stars: " + str(repo.stargazers_count))
+    # Prints the language used in that repo
+    print("Language used: " + str(repo.language))
     print("\n")
     
 username = "null"
