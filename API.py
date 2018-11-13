@@ -13,6 +13,8 @@ for repo in g.get_user().get_repos():
     print("Number of stars: " + str(repo.stargazers_count))
     # Prints the language used in that repo
     print("Language used: " + str(repo.language))
+    # Prints all commits 
+    print("Attributes: " + str(dir(repo)))
     print("\n")
     
 username = "null"
