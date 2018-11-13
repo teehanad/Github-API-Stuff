@@ -11,6 +11,7 @@ g = Github(username, password)
 for repo in g.get_user().get_repos():
     print(repo.name)
     print(repo.stargazers_count)
+    print(repo.language)
     print("\n")
     
 username = "null"
