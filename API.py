@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 # using username and password
 username = input("Enter a username inside quoteation marks: ")
 password = input("Enter your password inside quotation marks: ")
+ 
 g = Github(username, password)
 
 class Language:
